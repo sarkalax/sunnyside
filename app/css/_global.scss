@@ -60,12 +60,13 @@ p {
 }
 
 .logo {
-    min-width: 125px;
-    min-height: 25px;
+    width: 125px;
+    height: 25px;
+    margin: 0 auto;
 
     @media (min-width: 700px) {
-        min-width: 175px;
-        min-height: 35px;
+        width: 175px;
+        height: 35px;
     }
 }
 
