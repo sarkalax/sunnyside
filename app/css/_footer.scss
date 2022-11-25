@@ -1,0 +1,41 @@
+footer {
+    background: rgba(144, 212, 197, 1);
+    color: rgba(46, 119, 102, 1);
+
+    padding: 60px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .logo {
+        margin: 0 auto 45px;
+        
+    }
+    .navFooter {
+        display: flex;
+        justify-content: center;
+        gap: 55px;
+        margin-bottom: 75px;
+        opacity: 70%;
+
+        li {
+            transition: 0.3s ease-in-out;
+        }
+
+        li:hover {
+            color: rgb(230, 113, 133);
+        }
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        
+        img:hover {
+            filter: invert(1);
+        }
+
+    }
+}
