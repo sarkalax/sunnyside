@@ -1,0 +1,60 @@
+.wrapper { //nebo body
+    &.no-scroll {//zamezí scrollu, když je otevřená navMobile
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+header {
+    .hamburger.open {
+        span {
+            transition:all 0.3s ease-in-out;
+            transform-origin: 7px 2px;
+        }
+        span:first-child {
+            transform: rotate(45deg);
+        }
+        span:nth-child(2) {
+            display: none;
+        }
+        span:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+    .navMobile {
+        z-index: 5;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 15%;
+        right: 5%;
+        left: 5%;
+        padding: 85px 0;
+        background: white;
+        text-align: center;
+        box-shadow: 0px 44px 120px 22px rgb(22, 135, 192);
+        font-size: 1.5rem;
+        transition: 0.3s ease-in-out;
+        li {
+            margin-bottom: 35px; 
+            
+            a {
+                color: grey;
+            }
+        }
+        .button {
+            margin: 25px auto;
+            background: rgb(255, 230, 64);
+            color:rgba(255, 112, 6, 1);
+        
+            &:hover {
+                color: rgb(255, 230, 64);
+                background: rgba(255, 112, 6, 1);
+                opacity: 100%;
+            }
+        }
+    }
+}
+
+.hide-navM {
+    visibility: hidden;
+}

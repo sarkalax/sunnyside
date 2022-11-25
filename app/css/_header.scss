@@ -1,0 +1,109 @@
+header {
+    color: white;
+    min-height: 100vh;
+
+    background-image: url("../../images/mobile/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 700px){
+        background-image: url("../../images/desktop/image-header.jpg");
+        
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    
+        padding: 25px 20px;
+        margin-bottom: 40%;
+
+        @media (min-width:700px) {
+            padding: 35px 45px;
+            margin-bottom: 15%;
+        }
+        
+        .hamburger { 
+            transition:all 0.3s ease-in-out;
+
+            & span {
+                margin: auto;
+                display: block;
+                width: 25px;
+                height:3px;
+                background: white;
+                
+                
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+    
+                @media (min-width:700px) {
+                    display: none;
+                }
+            }
+        }
+        .navDesktop {
+            display: none;
+    
+            @media (min-width:700px) {
+                display: flex;
+                justify-content: space-between;
+
+
+                ul {
+                    display: flex;
+                    gap: 35px;
+                    margin: auto; //zarovná do jedné roviny
+                    margin-right: 35px; 
+                }
+                li a {
+                    position: relative;
+                    color: white;
+                   
+        
+                    &:hover::after {
+                        display: block;
+                        position: absolute;
+                        bottom: -10px;
+        
+                        content: "";
+                        height: 2px;
+                        width: 100%;
+                        background: rgb(255, 255, 255);
+                    }
+                }
+                .button {
+                    background: white;
+
+                    &:hover {
+                        background: rgb(127, 212, 251);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+    .headerText {
+    
+        text-align: center;
+        padding: 0 30px;
+
+        @media (min-width: 700px) {
+            h1 {
+                font-size: 3.25rem;
+            }   
+        }
+    
+        h1 {
+            margin-bottom: 2.77rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+    #logoHeader {
+        margin: auto 0;
+    }
+}
