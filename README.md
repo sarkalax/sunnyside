@@ -1,5 +1,5 @@
 FrontEnd Mentor Challenge - SUNNYSIDE
 
-[Open](https://sarysx.github.io/sunnyside/)
+[Open](https://sarkalax.github.io/sunnyside/)
 
 Responsiv
